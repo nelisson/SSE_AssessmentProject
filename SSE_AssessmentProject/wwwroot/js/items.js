@@ -4,7 +4,7 @@ fetch('/api/items')
     .then(data => {
         let output = '<ul>';
         data.forEach(item => {
-            output += `<li>${item.name}</li>`;
+            output += `<li>${item.name}: $${item.price}</li>`;
         });
         output += '</ul>';
         document.getElementById('itemList').innerHTML = output;

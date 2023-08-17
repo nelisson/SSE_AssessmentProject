@@ -27,3 +27,7 @@
 .ripple-button:active:after {
     transform: scale(4);
 }
+
+div#itemList {
+    text-align: start;
+}

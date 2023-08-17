@@ -1,7 +1,11 @@
+using SSE_AssessmentProject.Controllers.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddTransient<IRandomProductsService, RandomProductsService>();
 
 var app = builder.Build();
 
